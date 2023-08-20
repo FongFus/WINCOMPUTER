@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>WINCOMPUTER</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./mobile.css">
+    
+    <link rel="shortcut icon" href="/img/onlyLogo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+ 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"> <img src="img/LogoWin.png"></a>
+        </div>
+        <div class="search-box">
+            <div class="input-box">
+               <input #id="find" type="text" placeholder="Tìm kiếm...">
+            </div>
+            <div class="search-button">
+               <img src="img/search.png" alt="">
+            </div>
+         </div>
+         <div class="log">
+            <a href="#"><i class="ri-question-answer-fill"></i></a>
+            <a href="login.html"><i class="ri-logout-box-line"></i></a>
+            <a href="login.html"><i class="ri-login-box-line"></i></a>
+         </div>
+    </header>
+    <nav id="myNav">
+        <a href="index.html" class="Home"><i class="ri-home-4-fill" style="font-size: 20px;"></i> Trang chủ</a>
+        <a href="javascript:;" class="list" onclick="goInfo()">Giới thiệu</a>
+        <a href="#" class="list">Tin học văn phòng <i class="ri-skip-down-fill" style="font-size: 15px;"></i></a>
+        <div class="course" >
+            <ul>
+                <li><a href="word.html">Word</a></li>
+                <li><a href="excel.html">Excel</a></li>
+                <li><a href="powerpoint.html">Powerpoint</a></li>
+                <li><a href="#">Access</a></li>
+            </ul>
+        </div>
+        <a href="#" class="list">Trắc nghiệm</a>
+        <a href="diendan.html" class="list">Diễn đàn</a>
+        <a href="test.html" class="list"><i class="ri-phone-fill" style="font-size: 20px;"></i> Liên hệ</a>
+        <span></span>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="dropdownMenu">
+            <a href="javascript:;" class="list" onclick="goInfo()">Giới thiệu</a>
+        <a href="#">Tin học văn phòng <i class="ri-skip-down-fill" style="font-size: 15px;"></i></a>
+        
+        <a href="#">Trắc nghiệm</a>
+        <a href="diendan.html">Diễn đàn</a>
+        <a href="#"><i class="ri-phone-fill" style="font-size: 20px;" ></i> Liên hệ</a>
+        </div>
+     </nav>
+  
+     <script src="script2.js"></script>
+
+   <section>
+    <main>
+        
+        <table>
+            <!-- <tr><div></div></tr> -->
+            <tr>
+                
+                <td>
+                    <div id="learning-content">
+                        <div class="video-content">
+                            <div id="video">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/3Su3SdPkSvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                
+                            </div>
+                            <h3 id="title-video">Microsoft Excel 2016 Bài 01: Làm quen với Excel 2016</h3>
+                    </div>
+                    <p class="describe">
+                        <h4><strong>ƯU ĐIỂM CỦA Excel:</strong></h4>
+                        <br>
+                        <p class="content-describe"></p>
+                    </p>
+                    <div class="line"></div>
+                    <!-----------------------cmt------------------->
+                    <div class="post-top">
+                        <i class="ri-add-box-fill" style="font-size: 35px; color: rgb(245, 197, 77);"></i>
+                        <input type="text" placeholder="Viết bình luận..." />
+                        <i class="ri-arrow-right-circle-fill" style="font-size: 35px; color: rgb(77, 200, 245);" ></i>
+                    </div>
+
+                    <div class="cmt">
+                        <div class="post-top">
+                            <div class="dp">
+                                <img src="img/profile.png" alt="">
+                            </div>
+                            <div class="post-info">
+                                <p class="name">Minh Hiếu</p>
+                                <span class="time">12 hrs ago</span>
+                            </div>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+
+                        <div class="post-content">
+                            Bài học rất hay, rất dễ hiểu
+                        </div>
+                        
+                        <div class="post-bottom">
+                            <div class="action">
+                                <i class="far fa-thumbs-up"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="action">
+                                <i class="far fa-comment"></i>
+                                <span>Phản hồi</span>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="cmt">
+                        <div class="post-top">
+                            <div class="dp">
+                                <img src="https://i.9mobi.vn/cf/images/sa/2019/10/24/hinh-anh-nguoi-dep-cho-dien-thoai-9.jpg" alt="">
+                            </div>
+                            <div class="post-info">
+                                <p class="name">Minh Tâm</p>
+                                <span class="time">4 hrs ago</span>
+                            </div>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+
+                        <div class="post-content">
+                           Đỉnh ạ
+                        </div>
+                        
+                        <div class="post-bottom">
+                            <div class="action">
+                                <i class="far fa-thumbs-up"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="action">
+                                <i class="far fa-comment"></i>
+                                <span>Phản hồi</span>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="cmt">
+                        <div class="post-top">
+                            <div class="dp">
+                                <img src="https://img.lovepik.com/free-png/20211107/lovepik-confident-workplace-business-male-image-png-image_400441790_wh1200.png" alt="">
+                            </div>
+                            <div class="post-info">
+                                <p class="name">Trần Bính</p>
+                                <span class="time">9 hrs ago</span>
+                            </div>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+
+                        <div class="post-content">
+                            Em cảm ơn 
+                        </div>
+                        
+                        <div class="post-bottom">
+                            <div class="action">
+                                <i class="far fa-thumbs-up"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="action">
+                                <i class="far fa-comment"></i>
+                                <span>Phản hồi</span>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="cmt">
+                        <div class="post-top">
+                            <div class="dp">
+                                <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2020/10/1/840768/Net-Dep-Nguoi-Viet-Q.jpg" alt="">
+                            </div>
+                            <div class="post-info">
+                                <p class="name">Trương Trọng Nghĩa</p>
+                                <span class="time">22 hrs ago</span>
+                            </div>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+
+                        <div class="post-content">
+                            Em thích
+                        </div>
+                        
+                        <div class="post-bottom">
+                            <div class="action">
+                                <i class="far fa-thumbs-up"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="action">
+                                <i class="far fa-comment"></i>
+                                <span>Phản hồi</span>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <!------------------------------------------------------------>
+                </td>
+                <td>
+                    <div class="line-menu">
+                        <ul class="menu navigation">
+                            <li id="title-main"><h1>Microsoft Excel 2016</h1></li>
+                            <li onclick="video1()">Bài 01: Làm quen với Excel 2016</li>
+                            <li onclick="video2()">Bài 02: Thao tác cơ bản với Excel</li>
+                            <li onclick="video3()">Bài 03: Quản lý Vùng dữ liệu và Ô dữ liệu</li>
+                            <li onclick="video4()">Bài 04: Định dạng Vùng dữ liệu</li>
+                            <li onclick="video5()">Bài 05: Lập công thức tính toán trong Excel</li>
+                            <li onclick="video6()">Bài 06: Các hàm toán học, hàm thời gian</li>
+                            <li onclick="video7()">Bài 07: Nhóm hàm thống kê và chuỗi văn bản</li>
+                            <li onclick="video8()">Bài 08: Câu lệnh điều kiện và hàm điều kiện trong Excel</li>
+                            <li onclick="video9()">Bài 09: Hàm tìm kiếm VLOOKUP và HLOOKUP</li>
+                            <li onclick="video10()">Bài 10: Hàm MATCH và hàm INDEX</li>
+                            <li onclick="video11()">Bài 11: Quản lý bảng tính Excel</li>
+                            <li onclick="video12()">Bài 12: Trang trí bảng tính Excel</li>
+                            <li onclick="video13()">Bài 13: In bảng tính Excel</li>
+                            <li onclick="video14()">Bài 14: Tìm hiểu TABLE và ứng dụng</li>
+                            <li onclick="video15()">Bài 15: PIVOT TABLE và ứng dụng trong Excel</li>
+                            <li onclick="video16()">Bài 16: Phân tích Dữ liệu trong Excel</li>
+                            <li onclick="video17()">Bài 17: Vẽ đồ thị trong Excel</li>
+                            <li onclick="video18()">Bài 18: Vẽ đối tượng đồ họa trong Excel</li>
+                            <li onclick="video19()">Bài 19: Bảo vệ và chia sẻ bảng tính</li>
+                            <li onclick="video20()">Ứng dụng hàm INDIRECT và Data validation</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <!-- <div id="space">
+        </div>       -->
+    </main>
+    <!-- <footer>
+        <div>
+            <p>
+                footer
+            </p>
+        </div>
+    </footer> -->
+    <script src="./javascript-Excel.js"></script>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="img/LogoWin.png" class="logo1">
+                <p>
+                    Tự hào là trang web trao đổi, học tập tin học hàng đầu Việt Nam <br>
+                    Với hơn 10 năm kinh nghiệm giảng đường                     
+                </p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <p>371 Nguyễn Kiệm, Gò Vấp</p>
+                <p>TP Hồ Chí Minh, Viet Nam</p>
+                <p>XYZ XYZ XYZ</p>
+                <p class="email"> abcxyz@gmail.com</p>
+                <h4>+84 - 0123456789</h4>
+            </div>
+            <div class="col">
+                <h3>
+                    Links <div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="#"><i class="ri-facebook-box-fill"></i> Facebook</a></li>
+                    <li><a href="#"><i class="ri-instagram-fill"></i> Instagram</a></li>
+                    <li><a href="#"><i class="ri-twitter-x-fill"></i> Twitter</a></li>
+                    <li><a href="#"><i class="ri-youtube-fill"></i> Youtube</a></li>
+                    <li><a href="#"><i class="ri-tiktok-fill"></i>Tiktok</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div> </h3>
+                <form>
+                    <i class="ri-mail-send-line"></i> 
+                    <input type="email" placeholder=" Enter your email" required>
+                    <button type="submit">&#8594</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Open University - TP Ho Chi Minh</p>
+    </footer>
+</body>
+</html>

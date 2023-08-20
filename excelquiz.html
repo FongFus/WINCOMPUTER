@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./quiz.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/onlyLogo.png">
+    <title>WINCOMPUTER</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"> <img src="img/LogoWin.png"></a>
+        </div>
+        <div class="search-box">
+            <div class="input-box">
+               <input type="text" placeholder="Tìm kiếm...">
+            </div>
+            <div class="search-button">
+               <img src="img/search.png" alt="">
+            </div>
+         </div>
+         <div class="log">
+            <a href="#"><i class="ri-question-answer-fill"></i></a>
+            <a href="login.html"><i class="ri-logout-box-line"></i></a>
+            <a href="login.html"><i class="ri-login-box-line"></i></a>
+         </div>
+    </header>
+    <nav id="myNav">
+        <a href="index.html" class="Home"><i class="ri-home-4-fill" style="font-size: 20px;"></i> Trang chủ</a>
+        <a href="javascript:;" class="list" onclick="goInfo()">Giới thiệu</a>
+        <a href="#" class="list">Tin học văn phòng <i class="ri-skip-down-fill" style="font-size: 15px;"></i></a>
+        <div class="course" >
+            <ul>
+                <li><a href="word.html">Word</a></li>
+                <li><a href="excel.html">Excel</a></li>
+                <li><a href="powerpoint.html">Powerpoint</a></li>
+                <li><a href="https://mmgroup.vn/microsoft-access/" target="_blank">Access</a></li>
+            </ul>
+        </div>
+        <a href="#" class="list">Trắc nghiệm</a>
+        <a href="diendan.html" class="list">Diễn đàn</a>
+        <a href="test.html" class="list"><i class="ri-phone-fill" style="font-size: 20px;"></i> Liên hệ</a>
+        <span></span>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="dropdownMenu">
+            <a href="javascript:;" class="list" onclick="goInfo()">Giới thiệu</a>
+        <a href="#">Tin học văn phòng <i class="ri-skip-down-fill" style="font-size: 15px;"></i></a>
+        
+        <a href="#">Trắc nghiệm</a>
+        <a href="diendan.html">Diễn đàn</a>
+        <a href="#"><i class="ri-phone-fill" style="font-size: 20px;" ></i> Liên hệ</a>
+        </div>
+     </nav> 
+     <script src="script2.js"></script>
+  <section>
+    <div id="Title">
+        <h3>Bài kiểm tra kiến thức Excel 2016</h3>
+        <p><strong>Lưu ý:</strong> Bạn chỉ có một lần chọn duy nhất. Hãy suy nghĩ kĩ đáp án trước khi chọn.</p>
+    </div>
+    <main>
+        <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+                <h2 id="question">Question Text</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="a" class="answer"/>
+                        <label for="a" id="a_text">Answer</label>
+                    </li>
+    
+                    <li>
+                        <input type="radio" name="answer" id="b" class="answer"/>
+                        <label for="b" id="b_text">Answer</label>
+                    </li>
+    
+                    <li>
+                        <input type="radio" name="answer" id="c" class="answer"/>
+                        <label for="c" id="c_text">Answer</label>
+                    </li>
+    
+                    <li>
+                        <input type="radio" name="answer" id="d" class="answer"/>
+                        <label for="d" id="d_text">Answer</label>
+                    </li>
+                </ul>
+            </div>
+    
+            <button id="submit">Xác nhận</button>
+    
+        </div>
+    </main>
+  </section>
+    
+    <script src="./excelquiz.js"></script>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="img/LogoWin.png" class="logo1">
+                <p>
+                    Tự hào là trang web trao đổi, học tập tin học hàng đầu Việt Nam <br>
+                    Với hơn 10 năm kinh nghiệm giảng đường                     
+                </p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <p>371 Nguyễn Kiệm, Gò Vấp</p>
+                <p>TP Hồ Chí Minh, Viet Nam</p>
+                <p>XYZ XYZ XYZ</p>
+                <p class="email"> abcxyz@gmail.com</p>
+                <h4>+84 - 0123456789</h4>
+            </div>
+            <div class="col">
+                <h3>
+                    Links <div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="#"><i class="ri-facebook-box-fill"></i> Facebook</a></li>
+                    <li><a href="#"><i class="ri-instagram-fill"></i> Instagram</a></li>
+                    <li><a href="#"><i class="ri-twitter-x-fill"></i> Twitter</a></li>
+                    <li><a href="#"><i class="ri-youtube-fill"></i> Youtube</a></li>
+                    <li><a href="#"><i class="ri-tiktok-fill"></i>Tiktok</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div> </h3>
+                <form>
+                    <i class="ri-mail-send-line"></i> 
+                    <input type="email" placeholder=" Enter your email" required>
+                    <button type="submit">&#8594</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Open University - TP Ho Chi Minh</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylediendan.css">
+    <link rel="shortcut icon" href="/img/onlyLogo.png">
+    <title>WINCOMPUTER</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"> <img src="img/LogoWin.png"></a>
+        </div>
+        <div class="search-box">
+            <div class="input-box">
+               <input type="text" placeholder="Tìm kiếm...">
+            </div>
+            <div class="search-button">
+               <img src="img/search.png" alt="">
+            </div>
+         </div>
+         <div class="log">
+            <a href="#"><i class="ri-question-answer-fill"></i></a>
+            <a href="login.html"><i class="ri-logout-box-line"></i></a>
+            <a href="login.html"><i class="ri-login-box-line"></i></a>
+         </div>
+    </header>
+    <nav id="myNav">
+        <a href="index.html" class="Home"><i class="ri-home-4-fill" style="font-size: 20px;"></i> Trang chủ</a>
+        <a href="javascript:;" class="list" onclick="goInfo()">Giới thiệu</a>
+        <a href="#" class="list">Tin học văn phòng <i class="ri-skip-down-fill" style="font-size: 15px;"></i></a>
+        <div class="course" >
+            <ul>
+                <li><a href="word.html">Word</a></li>
+                <li><a href="excel.html">Excel</a></li>
+                <li><a href="powerpoint.html">Powerpoint</a></li>
+                <li><a href="https://mmgroup.vn/microsoft-access/" target="_blank">Access</a></li>
+            </ul>
+        </div>
+        <a href="#" class="list">Trắc nghiệm</a>
+        <a href="#" class="list">Diễn đàn</a>
+        <a href="test.html" class="list"><i class="ri-phone-fill" style="font-size: 20px;"></i> Liên hệ</a>
+        <span></span>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="dropdownMenu">
+            <a href="javascript:;" class="list" onclick="goInfo()">Giới thiệu</a>
+        <a href="#">Tin học văn phòng <i class="ri-skip-down-fill" style="font-size: 15px;"></i></a>
+        
+        <a href="#">Trắc nghiệm</a>
+        <a href="diendan.html">Diễn đàn</a>
+        <a href="test.html" class="list"><i class="ri-phone-fill" style="font-size: 20px;"></i> Liên hệ</a>
+        </div>
+     </nav> 
+     <script src="script.js"></script> 
+
+    <div class="container">
+        <div class="left-panel">
+            <ul>
+
+                <li>
+                    <i class="fa fa-user-friends"></i>
+                    <p>Bạn bè</p>
+                </li>
+                <li>
+                    <i class="fa fa-play-circle"></i>
+                    <p>Videos</p>
+                </li>
+               
+                <li>
+                    <i class="fa fa-users"></i>
+                    <p>Hội nhóm</p>
+                </li>
+              
+                <li>
+                    <i class="fas fa-calendar-week"></i>
+                    <p>Sự kiện</p>
+                </li>
+                <li>
+                    <i class="fa fa-bullhorn"></i>
+                    <p>Quảng cáo</p>
+                </li>
+               
+              
+                <li>
+                    <i class="fa fa-star"></i>
+                    <p>Yêu thích</p>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="middle-panel">
+
+       
+
+            <div class="post create">
+                <div class="post-top">
+                    <i class="ri-add-box-fill"></i>
+                    <input type="text" placeholder="Viết blog..." />
+                </div>
+                
+                <div class="post-bottom">
+                    
+                    <div class="action">
+                        <i class="fa fa-image"></i>
+                        <span>Ảnh/Video</span>
+                    </div>
+                  
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-top">
+                    <div class="dp">
+                        <img src="img/profile.png" alt="">
+                    </div>
+                    <div class="post-info">
+                        <p class="name">Minh Nhật</p>
+                        <span class="time">12 hrs ago</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+
+                <div class="post-content">
+                    💥[CÁCH MỞ FILE PDF DƯỚI DẠNG WORD NGAY TRONG WORD]💥
+                    ✨ Nếu đã nằm lòng cách chuyển từ Word sang PDF thì không thể nào bỏ lỡ cách chuyển ngược lại đúng khôngg.
+                    Ở đây, mình muốn chia sẻ với các bạn 2 cách tiện lợi để mở file PDF trên Word, phục vụ cho việc chỉnh sửa tài liệu nhé.
+                    📍 Cách 1: Mở ngay trong ứng dụng Word
+                    Bước 1: Mở file Word trống, chọn thẻ File... <br>
+                    <a href="#"> Xem thêm</a>
+                    <img src="img2/blog1.jpg" />
+                </div>
+                
+                <div class="post-bottom">
+                    <div class="action">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div class="action">
+                        <i class="far fa-comment"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div class="action">
+                        <i class="fa fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-top">
+                    <div class="dp">
+                        <img src="img/profile.png" alt="">
+                    </div>
+                    <div class="post-info">
+                        <p class="name">Minh Nhật</p>
+                        <span class="time">12 hrs ago</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+
+                <div class="post-content">
+                    [4 LÝ DO BẠN NÊN CÓ CHỨNG CHỈ MOS/IC3 CÀNG SỚM CÀNG TỐT]
+                    1️⃣ Có giá trị vĩnh viễn trên toàn cầu
+                    Ưu điểm nổi bật của chứng chỉ Tin học MOS/IC3 là được quốc tế công nhận và có giá trị thời hạn TRỌN ĐỜI . Cả 2 đều là thước đo đánh giá kỹ năng tin học được công nhận rộng rãi trên hơn 150 quốc gia, trong đó có Việt Nam. Với đặc điểm này, thi sớm giúp bạn vừa có thêm kĩ năng tin học phục vụ công việc mà không phải lo lắng thi lại để duy trì hiệu lực chứng chỉ sau một thời gian.
+                    2️⃣ Nâ…  <br>
+                    <a href="#"> Xem thêm</a>
+                    <img src="https://scontent.fhan3-4.fna.fbcdn.net/v/t39.30808-6/362282000_237133112539436_7472576424067168898_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=hHQ0RZzhMckAX8qNd9N&_nc_ht=scontent.fhan3-4.fna&oh=00_AfBaYXS_88U8lLE4rlpPsTXJB_BJvvPIYUthoh82RLubRg&oe=64E6D06A" />
+                </div>
+                
+                <div class="post-bottom">
+                    <div class="action">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div class="action">
+                        <i class="far fa-comment"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div class="action">
+                        <i class="fa fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-top">
+                    <div class="dp">
+                        <img src="img/profile.png" alt="">
+                    </div>
+                    <div class="post-info">
+                        <p class="name">Minh Nhật</p>
+                        <span class="time">12 hrs ago</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+
+                <div class="post-content">
+                    SỬ DỤNG MACRO TRONG EXCEL
+Macro là công cụ cho phép ghi lại các thao tác (các lệnh) của người sử dụng dưới dạng một danh sách các lệnh. Khi ta chạy một macro, nó sẽ thực hiện lại các thao tác đó một cách tự động.
+Như vậy muốn tự động hóa một quá trình, ta cần thực hiện các công việc đó, dùng macro ghi lại và khi cần thực hiện quá trình đó tự động, ta cho chạy macro.
+Macro giống như một hàm giúp bạn thực hiện nhữ… <br>
+                    <a href="#"> Xem thêm</a>
+                    <img src="https://scontent.fhan4-1.fna.fbcdn.net/v/t39.30808-6/362666005_238885999030814_4068939618185812294_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=IHny7g4rSnwAX_2Dx8h&_nc_ht=scontent.fhan4-1.fna&oh=00_AfAvJL6oD4ODGWW3umCfbQcQuzNj9kmKS2V63nS3gI5UqA&oe=64E57292" />
+                </div>
+                
+                <div class="post-bottom">
+                    <div class="action">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div class="action">
+                        <i class="far fa-comment"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div class="action">
+                        <i class="fa fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-top">
+                    <div class="dp">
+                        <img src="img/profile.png" alt="">
+                    </div>
+                    <div class="post-info">
+                        <p class="name">Minh Nhật</p>
+                        <span class="time">12 hrs ago</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+
+                <div class="post-content">
+                    LỌC DỮ LIỆU TRONG EXCEL ĐƠN GIẢN VÀ NHANH CHÓNG
+                    Khi làm việc với Excel thì có thể bạn sẽ gặp một số trường hợp dữ liệu bị trùng nhau do lỗi nhập liệu, điều này có thể dẫn đến sai lệch số liệu. Đừng lo, Tin Học Đại Dương sẽ hướng dẫn bạn các cách lọc dữ liệu trùng nhau
+                    👉Thành thạo Word, Excel, PP hãy cùng Tin Học Đại Dương nâng cao kỹ năng tin học văn phòng nhé… <br>
+                    <a href="#"> Xem thêm</a>
+                    <img src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/340227511_932041791328102_6494897216288082012_n.png?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=s6QWsvxZBcsAX_kxd4s&_nc_ht=scontent.fhan3-2.fna&oh=00_AfAnIIqqAf0lR0HBH_wEaEFviczxUHavajgKbfax3TjB-A&oe=64E58966" />
+                </div>
+                
+                <div class="post-bottom">
+                    <div class="action">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div class="action">
+                        <i class="far fa-comment"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div class="action">
+                        <i class="fa fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-top">
+                    <div class="dp">
+                        <img src="img/profile.png" alt="">
+                    </div>
+                    <div class="post-info">
+                        <p class="name">Minh Nhật</p>
+                        <span class="time">20 hrs ago</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+
+                <div class="post-content">
+                    <h3>Hướng Dẫn Tự Học Word Cấp Tốc Từ A Đến Z </h3>
+Xin chào tất cả các bạn, trong bài viết này, mình sẽ hướng dẫn cho bạn cách tự học cấp tốc Word 2019 từ A đến Z. Giúp bạn trở nên tự tin và nắm vững kiến thức khi sử dụng công cụ soạn thảo word.
+                       <br>  <a href="#"> Xem thêm</a>
+                 <img src="https://blogdaytinhoc.com/public/files/images/2022/10/01/hinh-muc-luc.jpg" />
+                </div>
+                
+                <div class="post-bottom">
+                    <div class="action">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div class="action">
+                        <i class="far fa-comment"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div class="action">
+                        <i class="fa fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-top">
+                    <div class="dp">
+                        <img src="img/profile.png" alt="">
+                    </div>
+                    <div class="post-info">
+                        <p class="name">Minh Nhật</p>
+                        <span class="time">2 hrs ago</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+
+                <div class="post-content">
+                    💥[CÁCH MỞ FILE PDF DƯỚI DẠNG WORD NGAY TRONG WORD]💥
+                    ✨ Nếu đã nằm lòng cách chuyển từ Word sang PDF thì không thể nào bỏ lỡ cách chuyển ngược lại đúng khôngg.
+                    Ở đây, mình muốn chia sẻ với các bạn 2 cách tiện lợi để mở file PDF trên Word, phục vụ cho việc chỉnh sửa tài liệu nhé.
+                    📍 Cách 1: Mở ngay trong ứng dụng Word
+                    Bước 1: Mở file Word trống, chọn thẻ File... <br>
+                    <a href="#"> Xem thêm</a>
+                    <img src="img2/blog1.jpg" />
+                </div>
+                
+                <div class="post-bottom">
+                    <div class="action">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div class="action">
+                        <i class="far fa-comment"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div class="action">
+                        <i class="fa fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </div>
+        <div class="right-panel">
+            <div class="pages-section">
+                <h4>Trang cá nhân</h4>
+                <a class='page' href="#">
+                    <div class="dp">
+                        <img src="img/profile.png" alt="">
+                    </div>
+                    <p class="name">Minh Nhật</p>
+                </a>
+
+                
+            </div>
+
+            <div class="friends-section">
+                <h4>Bạn bè</h4>
+                <a class='friend' href="#">
+                    <div class="dp">
+                        <img src="img/profile3.png" alt="">
+                    </div>
+                    <p class="name">Phong Phú</p>
+                </a>
+                <a class='friend' href="#">
+                    <div class="dp">
+                        <img src="https://as1.ftcdn.net/v2/jpg/02/30/60/82/1000_F_230608264_fhoqBuEyiCPwT0h9RtnsuNAId3hWungP.jpg" alt="">
+                    </div>
+                    <p class="name">Quốc Lam</p>
+                </a>
+                <a class='friend' href="#">
+                    <div class="dp">
+                        <img src="https://nhadepso.com/wp-content/uploads/2023/03/cap-nhat-99-hinh-anh-avatar-gau-cute-de-thuong-ngo-nghinh_2.jpg" alt="">
+                    </div>
+                    <p class="name">Nhật Long</p>
+                </a>
+                <a class='friend' href="#">
+                    <div class="dp">
+                        <img src="img/profile2.png" alt="">
+                    </div>
+                    <p class="name">Minh Thư</p>
+                </a>
+                <a class='friend' href="#">
+                    <div class="dp">
+                        <img src="https://img.lovepik.com/free-png/20211129/lovepik-girl-cartoon-hand-drawn-cute-illustration-avatar-png-image_401193454_wh1200.png" alt="">
+                    </div>
+                    <p class="name">Lư Đoàn Bảo Ngọc</p>
+                </a>
+                <a class='friend' href="#">
+                    <div class="dp">
+                        <img src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg" alt="">
+                    </div>
+                    <p class="name">Tú</p>
+                </a>
+                
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="img/LogoWin.png" class="logo1">
+                <p>
+                    Tự hào là trang web trao đổi, học tập tin học hàng đầu Việt Nam <br>
+                    Với hơn 10 năm kinh nghiệm giảng đường                     
+                </p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <p>371 Nguyễn Kiệm, Gò Vấp</p>
+                <p>TP Hồ Chí Minh, Viet Nam</p>
+                <p>XYZ XYZ XYZ</p>
+                <p class="email"> abcxyz@gmail.com</p>
+                <h4>+84 - 0123456789</h4>
+            </div>
+            <div class="col">
+                <h3>
+                    Links <div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="#"><i class="ri-facebook-box-fill"></i> Facebook</a></li>
+                    <li><a href="#"><i class="ri-instagram-fill"></i> Instagram</a></li>
+                    <li><a href="#"><i class="ri-twitter-x-fill"></i> Twitter</a></li>
+                    <li><a href="#"><i class="ri-youtube-fill"></i> Youtube</a></li>
+                    <li><a href="#"><i class="ri-tiktok-fill"></i>Tiktok</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div> </h3>
+                <form>
+                    <i class="ri-mail-send-line"></i> 
+                    <input type="email" placeholder=" Enter your email" required>
+                    <button type="submit">&#8594</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Open University - TP Ho Chi Minh</p>
+    </footer>
+</body>
+
+</html>

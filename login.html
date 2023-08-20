@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>WINCOMPUTER</title>
+    <link rel="stylesheet" href="./styleLogin.css">
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./mobile.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/onlyLogo.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"> <img src="img/LogoWin.png"></a>
+        </div>
+        <div class="search-box">
+            <div class="input-box">
+               <input type="text" placeholder="Tìm kiếm...">
+            </div>
+            <div class="search-button">
+               <img src="img/search.png" alt="">
+            </div>
+         </div>
+         <div class="log">
+            <a href="#"><i class="ri-question-answer-fill"></i></a>
+            <a href="#"><i class="ri-logout-box-line"></i></a>
+            <a href="#"><i class="ri-login-box-line"></i></a>
+         </div>
+    </header>
+    <nav id="myNav">
+        <a href="index.html" class="Home"><i class="ri-home-4-fill" style="font-size: 20px;"></i> Trang chủ</a>
+        <a href="javascript:;" class="list" onclick="goInfo()">Giới thiệu</a>
+        <a href="#" class="list">Tin học văn phòng <i class="ri-skip-down-fill" style="font-size: 15px;"></i></a>
+        <div class="course" >
+            <ul>
+                <li><a href="word.html">Word</a></li>
+                <li><a href="excel.html">Excel</a></li>
+                <li><a href="powerpoint.html">Powerpoint</a></li>
+                <li><a href="https://mmgroup.vn/microsoft-access/" target="_blank">Access</a></li>
+            </ul>
+        </div>
+        <a href="#" class="list">Trắc nghiệm</a>
+        <a href="diendan.html" class="list">Diễn đàn</a>
+        <a href="test.html" class="list"><i class="ri-phone-fill" style="font-size: 20px;"></i> Liên hệ</a>
+        <span></span>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="dropdownMenu">
+            <a href="javascript:;" class="list" onclick="goInfo()">Giới thiệu</a>
+        <a href="#">Tin học văn phòng <i class="ri-skip-down-fill" style="font-size: 15px;"></i></a>
+        
+        <a href="#">Trắc nghiệm</a>
+        <a href="diendan.html">Diễn đàn</a>
+        <a href="#"><i class="ri-phone-fill" style="font-size: 20px;" ></i> Liên hệ</a>
+        </div>
+     </nav> 
+    <section>
+        <div class="wrapper active-popup">
+
+            <div class="form-box login">
+                <h2>Đăng nhập</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+    
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Mật khẩu</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Nhớ mật khẩu</label>
+                        <a href="#">Quên mật khẩu?</a>
+                    </div>
+                    <button type="submit" class="btn">Đăng nhập</button>
+                    <div class="login-register">
+                        <p>Chưa có tài khoản? <a href="#" class="register-link">Tạo tài khoản</a></p>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="form-box register">
+                <h2>Đăng ký</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Tên tài khoản</label>
+                    </div>
+    
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+    
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Mật khẩu</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Bằng cách nhấp vào Đăng ký, bạn đồng ý với Điều khoản, Chính sách quyền riêng tư và Chính sách cookie của chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS và hủy nhận bất kỳ lúc nào.</label>
+                    </div>
+                    <button type="submit" class="btn">Đăng ký</button>
+                    <div class="login-register">
+                        <p>Đã có tài khoản? <a href="#" class="login-link">Đăng nhập</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <script src="./javascript2.js"></script>
+</body>
+</html>
